@@ -1,0 +1,6 @@
+#ifndef SCMSEED_LOG_H_
+#define SCMSEED_LOG_H_
+
+#define SEISCOMP_COMPONENT MINISEED
+
+#endif // SCMSEED_LOG_H_
