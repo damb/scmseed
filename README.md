@@ -64,8 +64,10 @@ $ scmseed --record-url "slink://rtserve.iris.washington.edu" > ~/tmp/records.mse
 
 ```
 $ echo "2020-01-01T00:00:00;2020-01-02T00:00:00;CH.GRIMS..HHZ" | \
-  scmseed --record-url "fdsnws://eida-federator.ethz.ch/fdsnws/dataselect/1/query?rate=20" --list - \
-  > ~/tmp/records.mseed
+  scmseed \
+    --record-url "resample://fdsnws?rate=20/eida-federator.ethz.ch/fdsnws/dataselect/1/query" \
+    --list - \
+    > ~/tmp/records.mseed
 ```
 
 ## Compiling and Installation
