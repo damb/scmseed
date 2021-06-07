@@ -47,6 +47,8 @@ e.g.
 2019-07-17T02:00:00;2019-07-17T02:10:00;GR.CLL..BHZ
 ```
 
+Note that comment lines (i.e. with a leading `#` character) are skipped.
+
 ### Examples:
 
 - Dump records for all streams from a seedlink server

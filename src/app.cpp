@@ -143,6 +143,12 @@ void Application::parseList(std::istream &is) {
 
   std::string line;
   while (std::getline(is, line)) {
+    boost::algorithm::trim(line);
+    // skip commented lines
+    if (line.empty() || (!line.empty() && line[0] == '#')) {
+      continue;
+    }
+
     std::vector<std::string> tokensLine;
     boost::algorithm::split(tokensLine, line, boost::is_any_of(";"));
     if (tokensLine.size() != 3) {
