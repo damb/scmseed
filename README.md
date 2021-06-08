@@ -70,6 +70,10 @@ $ echo "2020-01-01T00:00:00;2020-01-02T00:00:00;CH.GRIMS..HHZ" | \
     > ~/tmp/records.mseed
 ```
 
+For further details on how to configure a RecordStream, please refer to the
+[SeisComP
+documentation](https://www.seiscomp.de/doc/base/concepts/recordstream.html).
+
 ## Compiling and Installation
 
 Get a copy of
